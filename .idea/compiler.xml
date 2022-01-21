@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Jet-Brains-Academy-Track-Java-Backend-Developer" target="1.5" />
+      <module name="Jet-Brains-Academy-Track-Java-Backend-Developer" target="16" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -29,10 +29,30 @@
 
 package Project_1_Cinema_Management_Application;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Array_Operation {
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        long[] array = Arrays.stream(scanner.nextLine().split(" "))
+                .mapToLong(Long::parseLong)
+                .toArray();
+        int index = scanner.nextInt();
+        long val = scanner.nextLong();
+        addValueByIndex(array,index,val);
+        Arrays.stream(array).forEach(e -> System.out.print(e + " "));
+    }
+
+    public static void addValueByIndex(long[] arr, int index, long val){
+
+        long arryElement = arr[index];
+        arryElement += val;
+        arr[index] = arryElement;
+
+        //Arrays.stream(arr).forEach(ele -> System.out.print(ele + " "));
     }
 
 }
