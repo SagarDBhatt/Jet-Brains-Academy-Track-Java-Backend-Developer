@@ -27,8 +27,34 @@
 
 package Project_1_Cinema_Management_Application;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
 public class Guest_List {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        List<String> lsGuest = new ArrayList<String>();
 
+        while(scanner.hasNextLine()){
+            String[] tokens = scanner.nextLine().split("\\s");
+            for(String s : tokens){
+                lsGuest.add(s);
+            }
+        }
+        scanner.close();
+        /**
+         * For each loop to print all the String elements of list in order they enter.
+         */
+//        for(String s : lsGuest){
+//            System.out.println(s);
+//        }
+        /**
+         * Simple For loop to get the data in reverse order of the insertion.
+         */
+        for(int i = lsGuest.size()-1; i >= 0; i--){
+            System.out.println(lsGuest.get(i));
+        }
     }
 }
