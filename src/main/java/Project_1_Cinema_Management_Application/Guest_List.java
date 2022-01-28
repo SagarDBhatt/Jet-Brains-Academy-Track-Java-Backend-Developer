@@ -44,12 +44,13 @@ public class Guest_List {
             }
         }
         scanner.close();
+
         /**
          * For each loop to print all the String elements of list in order they enter.
          */
-//        for(String s : lsGuest){
-//            System.out.println(s);
-//        }
+        for(String s : lsGuest){
+            System.out.println(s);
+        }
         /**
          * Simple For loop to get the data in reverse order of the insertion.
          */
