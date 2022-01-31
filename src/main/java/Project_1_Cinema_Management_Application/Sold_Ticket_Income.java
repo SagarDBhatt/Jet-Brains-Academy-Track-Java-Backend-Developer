@@ -43,6 +43,17 @@ import java.util.Scanner;
 public class Sold_Ticket_Income {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the number of rows:");
+        int num_rows = scanner.nextInt();
+        System.out.println("Enter the number of seats in each row:");
+        int num_cols = scanner.nextInt();
 
+        System.out.println("Total income:");
+        if(num_rows * num_cols < 60){
+            System.out.println("$" + num_rows * num_cols * 10);
+        }
+        else{
+            System.out.println("$" + ( ((num_rows/2) * num_cols * 10) + ( (num_rows - (num_rows/2)) * num_cols * 8 )  ) );
+        }
     }
 }
