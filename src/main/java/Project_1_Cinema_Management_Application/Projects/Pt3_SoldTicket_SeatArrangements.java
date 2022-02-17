@@ -82,7 +82,7 @@
  * 8 S S S S S S S S S
  */
 
-package Project_1_Cinema_Management_Application;
+package Project_1_Cinema_Management_Application.Projects;
 
 import java.util.Scanner;
 
