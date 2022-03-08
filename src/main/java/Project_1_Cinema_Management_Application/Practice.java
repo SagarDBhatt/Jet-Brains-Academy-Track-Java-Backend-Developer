@@ -14,7 +14,15 @@ public class Practice {
         String[][] arrayS = new String[5][5];
         //printAL(4, 4);
 
-        printAL(4,4);
+        //printAL(4,4);
+
+        Integer p = 5;
+        Integer q = 20;
+        Integer r = 5;
+        Short s = 5;
+        System.out.println(p.equals(q));
+        System.out.println(p.equals(r));
+        System.out.println(p.equals(s));
 
     }//END OF main()
 
